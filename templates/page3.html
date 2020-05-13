@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance Task</title>
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+</head>
+
+<body>
+    <h1>Let's see how you did!</h1>
+    <h3> You're on page 3</h3>
+    <p> {{ props.message }} </p>
+    <p>Your total score is now: {{ props.totalscore }} </p>
+    <form method="post" action="/page3">
+        <p> Which country is bacon originally from? </p>
+        <input type="hidden" value="{{ props.totalscore }}" />
+        <input type="text" name="useranswer2" placeholder="Enter your answer"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>

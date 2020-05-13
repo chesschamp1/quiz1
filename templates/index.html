@@ -3,10 +3,12 @@
         <title>Welcome!</title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
+        <h1>FOOD QUIZ</h1>
+        <p>This is a quiz. It's about food. Enter your name to start the quiz!</p>
+        <form method="post" action="/results">
+            <input type="text" name="nickname" placeholder="Enter your nickname"/>
+            <p> Which country produces the most coffee in the world? </p>
+            <input type="text" name="useranswer" placeholder="Enter your answer"/>
             <input type="submit" value="Submit"/>
         </form>
     </body>
